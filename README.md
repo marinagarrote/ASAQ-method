@@ -18,6 +18,7 @@ The input of the method is a FASTA file containing the alignment of four species
 |:------------- |:------------- | :-----: |
 | fastaFile | Path to the fasta file with the alignment | /home/user/data/alignment.fa |
 | filter (optional)| Minimum value accepted on the entries of the vectors obtained by a _T_-leaf transformation on the distribution obtained from the alignment. <br /> The default value is _filter = -1_ | -0.5 |
+| threshold (optional)| Maximum condition number of N_ij accepted in the computation of I_AB. <br /> The default value is _threshold = 5000_ | 1000 |
 
 
 ### Output
@@ -47,6 +48,6 @@ The parameter _filter_ can be omitted.
 
 ### Examples:
 ```
-  ./ASAQ /home/user/data/alignment.fa -0.5
+  ./ASAQ /home/user/data/alignment.fa -0.5 1000
   ./ASAQ /home/user/data/alignment.fa
 ```
